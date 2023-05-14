@@ -45,17 +45,17 @@ function App() {
       <Router>
          <HeaderLoggedIn isLoggedIn = {state.isLoggedIn} globalState={state} globalsetState={setState} /> 
         <Switch>
-          <Route exact path="/" >
+          <Route exact path="/webapp/" >
             <HomePage globalState={state} globalsetState={setState} />
           </Route>
-          <Route exact path="/login" >
+          <Route exact path="/webapp/login" >
             <LoginPage credentials={state.credentials} globalsetState={setState} />
           </Route>
-          <Route exact path="/product" >
+          <Route exact path="/webapp/product" >
             <ProductPage credentials={state.credentials} globalsetState={setState} 
             selectedProductId={state.selectedProductId} products={state.products}/>
           </Route>
-          <Route exact path='/cart'>
+          <Route exact path='/webapp/cart'>
             <CartPage globalsetState={setState} cartProducts = {state.userProducts} products={state.products}/>
           </Route>
         </Switch>
