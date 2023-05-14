@@ -25,7 +25,7 @@ function LoginPage(props) {
                     loggedInUser: user
                 }
             })
-            history.push("/");
+            history.push("/webapp/");
         }
         
       };

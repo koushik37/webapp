@@ -23,7 +23,7 @@ function CartPage(props) {
                 userProducts: {}
             };
         })
-        history.push("/");
+        history.push("/webapp/");
     }
     return (
         <>

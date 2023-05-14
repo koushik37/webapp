@@ -25,7 +25,7 @@ function HomePage(props) {
           selectedProductId: id
         }
      });
-      history.push("/product");
+      history.push("/webapp/product");
   }
   console.log("HomePage---------> ",shownProducts)
 

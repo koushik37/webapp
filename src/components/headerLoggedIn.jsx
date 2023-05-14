@@ -86,7 +86,7 @@ export default function PrimarySearchAppBar(props) {
      
   }
   const handleLogin = () => {
-    history.push("/login");
+    history.push("/webapp/login");
 }
   const handleProfileMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
@@ -107,7 +107,7 @@ export default function PrimarySearchAppBar(props) {
       isLoggedIn : false
      }});
      handleMenuClose();
-     history.push("/");
+     history.push("/webapp/");
 
   }
 
@@ -115,7 +115,7 @@ export default function PrimarySearchAppBar(props) {
     setMobileMoreAnchorEl(event.currentTarget);
   };
   const handleCartClick = () => {
-    history.push("/cart");
+    history.push("/webapp/cart");
   }
   const menuId = 'primary-search-account-menu';
   const renderMenu = (
